@@ -29,4 +29,26 @@ username  ALL=(ALL) NOPASSWD:ALL
  ```
  ```
  sudo systemctl restart ssh.service
+ 
  ```
+ 
+5.  Automatic session timeout
+
+```
+ClientAliveInterval 300
+ClientAliveCountMax 1
+```
+6. Automatic disconnection in case of incorrect login
+
+```
+MaxAuthTries 2
+```
+7. Deactivate unused functions
+```
+AllowTcpForwarding no                   # Disables port forwarding.
+X11Forwarding no                        # Disables remote GUI view.
+AllowAgentForwarding no                 # Disables the forwarding of the SSH login.
+AuthorizedKeysFile .ssh/authorized_keys # The ".ssh/authorized_keys2" file should be removed.
+```
+
+```
