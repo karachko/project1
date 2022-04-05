@@ -12,14 +12,14 @@ usermod -aG sudo b***m
  
  3. Include b***m user into the /etc/sudoers
  
-'''
+```
 visudo
 Copy
 Scroll down to the end of the file and add the following line:
 
 /etc/sudoers
 username  ALL=(ALL) NOPASSWD:ALL
-'''
+```
 
 4. Disable remote root login
 ```
