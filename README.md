@@ -35,16 +35,22 @@ username  ALL=(ALL) NOPASSWD:ALL
 5.  Automatic session timeout
 
 ```
+/etc/ssh/sshd_config:
+
 ClientAliveInterval 300
 ClientAliveCountMax 1
 ```
 6. Automatic disconnection in case of incorrect login
 
 ```
+/etc/ssh/sshd_config:
+
 MaxAuthTries 2
 ```
 7. Deactivate unused functions
 ```
+/etc/ssh/sshd_config:
+
 AllowTcpForwarding no                   # Disables port forwarding.
 X11Forwarding no                        # Disables remote GUI view.
 AllowAgentForwarding no                 # Disables the forwarding of the SSH login.
@@ -52,3 +58,14 @@ AuthorizedKeysFile .ssh/authorized_keys # The ".ssh/authorized_keys2" file shoul
 ```
 
 ```
+
+8. Change default port for SSH
+
+```
+/etc/ssh/sshd_config:
+
+
+Port SELECTED_PORT
+
+```
+
