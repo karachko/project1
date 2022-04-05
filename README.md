@@ -57,7 +57,7 @@ AllowAgentForwarding no                 # Disables the forwarding of the SSH log
 AuthorizedKeysFile .ssh/authorized_keys # The ".ssh/authorized_keys2" file should be removed.
 ```
 
-```
+
 
 8. Change default port for SSH
 
