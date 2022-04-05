@@ -1,8 +1,8 @@
 # project1
 1. Create a new user
 ```
-adduser braam
-usermod -aG sudo braam
+adduser b***m
+usermod -aG sudo b***m
 ```
  2. Install command sudo
  apt update
