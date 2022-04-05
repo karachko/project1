@@ -1,7 +1,7 @@
 # project1
 1. Create a new user
 ```
-adduser b***m
+adduser braam
 usermod -aG sudo b***m
 ```
  2. Install command sudo
@@ -10,7 +10,7 @@ usermod -aG sudo b***m
  apt install sudo -y
  ```
  
- 3. Include b***m user into the /etc/sudoers
+ 3. Add braam user into the /etc/sudoers
  
 ```
 visudo
