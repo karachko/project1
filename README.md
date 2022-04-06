@@ -1,5 +1,7 @@
 # project1
 
+https://community.hetzner.com/tutorials/securing-ssh#on-the-server
+
 **Step 1 - Securing the SSH service**
 1. Create a new user
 ```
@@ -121,3 +123,4 @@ ssh -i id_rsa -p 1024 braam@9111116
 
 I copied id_rsa on Windows client for connection to the server
 
+I connected with key to the server from the Windows client using Putty
