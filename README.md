@@ -34,6 +34,9 @@ username  ALL=(ALL) NOPASSWD:ALL
  
  ```
  
+ 
+ 
+ 
 5.  Automatic session timeout
 
 ```
@@ -103,3 +106,18 @@ port = SELECTED_SSH_PORT
 systemctl restart fail2ban
 
 ```
+
+
+Step 3 - Certificate based authentication
+
+I created the pair of keys on the server using 
+ssh-keygen -b 4096
+
+I copied the public key to the /home/braam/.ssh/authorized_keys file on the server. 
+
+I connected to theserver using thefollowing command
+
+ssh -i id_rsa -p 1024 braam@9111116
+
+I copied id_rsa on Windows client for connection to the server
+
