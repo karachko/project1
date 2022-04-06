@@ -70,6 +70,12 @@ AuthorizedKeysFile .ssh/authorized_keys # The ".ssh/authorized_keys2" file shoul
 Port 1024
 
 ```
+9. Enable user for SSH
+
+```
+AllowUsers braam
+```
+
 **Step 2 - Setup of Fail2Ban**
 ```
  wget http://ftp.de.debian.org/debian/pool/main/f/fail2ban/fail2ban_0.11.2-2_all.deb
