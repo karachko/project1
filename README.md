@@ -80,3 +80,16 @@ Port 1024
  
  systemctl enable fail2ban
 
+- Create the configuration using a template:
+
+cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+- In the [sshd] tab, enable must be set to true and the possibly changed SSH port must be specified.
+
+```
+enabled = true
+port = SELECTED_SSH_PORT
+
+systemctl restart fail2ban
+
+```
