@@ -1,4 +1,6 @@
 # project1
+
+**Step 1 - Securing the SSH service**
 1. Create a new user
 ```
 adduser braam
@@ -65,7 +67,16 @@ AuthorizedKeysFile .ssh/authorized_keys # The ".ssh/authorized_keys2" file shoul
 /etc/ssh/sshd_config:
 
 
-Port SELECTED_PORT
+Port 1024
 
 ```
+**Step 2 - Setup of Fail2Ban**
+```
+ wget http://ftp.de.debian.org/debian/pool/main/f/fail2ban/fail2ban_0.11.2-2_all.deb
+
+ sudo dpkg -i fail2ban_0.11.2-2_all.deb
+ 
+ sudo apt-get install -f
+ 
+ systemctl enable fail2ban
 
