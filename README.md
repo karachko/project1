@@ -115,7 +115,7 @@ ssh-keygen -b 4096
 
 I copied the public key to the /home/braam/.ssh/authorized_keys file on the server. 
 
-I connected to theserver using thefollowing command
+I connected to the server using the following command
 
 ssh -i id_rsa -p 1024 braam@9111116
 
